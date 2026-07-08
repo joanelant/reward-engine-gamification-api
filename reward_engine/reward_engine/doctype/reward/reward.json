@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-30 11:27:50.315856",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xeue",
+  "application",
+  "reward_name",
+  "reward_type",
+  "value",
+  "description",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xeue",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Related Application",
+   "fieldname": "application",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Application",
+   "options": "Reward Application",
+   "reqd": 1
+  },
+  {
+   "description": "Name of the Reward",
+   "fieldname": "reward_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reward Name",
+   "reqd": 1
+  },
+  {
+   "description": "Type of the reward",
+   "fieldname": "reward_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Reward Type",
+   "options": "Badge\nCoupon\nBonus\nDiscount\nOther",
+   "reqd": 1
+  },
+  {
+   "description": "Reward value",
+   "fieldname": "value",
+   "fieldtype": "Data",
+   "label": "Value"
+  },
+  {
+   "description": "Short Description",
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "description": "Reward status",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Active\nInactive",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-30 11:35:34.818331",
+ "modified_by": "Administrator",
+ "module": "Reward Engine",
+ "name": "Reward",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

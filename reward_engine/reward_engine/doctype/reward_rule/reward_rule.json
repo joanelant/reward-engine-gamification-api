@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-30 11:50:09.557065",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_g7yt",
+  "application",
+  "action",
+  "rule_name",
+  "points",
+  "xp",
+  "threshold",
+  "reward",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_g7yt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Related Application",
+   "fieldname": "application",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Application",
+   "options": "Reward Application",
+   "reqd": 1
+  },
+  {
+   "description": "Related Action",
+   "fieldname": "action",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Action",
+   "options": "Reward Action",
+   "reqd": 1
+  },
+  {
+   "description": "Name of the rule",
+   "fieldname": "rule_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rule Name",
+   "reqd": 1
+  },
+  {
+   "description": "Number of points to give",
+   "fieldname": "points",
+   "fieldtype": "Int",
+   "label": "Points"
+  },
+  {
+   "description": "Number of XP to give",
+   "fieldname": "xp",
+   "fieldtype": "Int",
+   "label": "XP"
+  },
+  {
+   "description": "Number of actions required",
+   "fieldname": "threshold",
+   "fieldtype": "Int",
+   "label": "Threshold"
+  },
+  {
+   "description": "Reward to give",
+   "fieldname": "reward",
+   "fieldtype": "Link",
+   "label": "Reward",
+   "options": "Reward"
+  },
+  {
+   "description": "Rule status",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Active\nInactive",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-30 12:00:31.990176",
+ "modified_by": "Administrator",
+ "module": "Reward Engine",
+ "name": "Reward Rule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

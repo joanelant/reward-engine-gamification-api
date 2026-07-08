@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-30 12:01:11.495727",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_t8ul",
+  "application",
+  "user_profile",
+  "action",
+  "event_id",
+  "action_date",
+  "points_added",
+  "xp_added",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_t8ul",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Application that sent the action",
+   "fieldname": "application",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Application",
+   "options": "Reward Application",
+   "reqd": 1
+  },
+  {
+   "description": "Related user",
+   "fieldname": "user_profile",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User Profile",
+   "options": "User Reward Profile",
+   "reqd": 1
+  },
+  {
+   "description": "Perfomed action",
+   "fieldname": "action",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Action",
+   "options": "Reward Action",
+   "reqd": 1
+  },
+  {
+   "description": "Date of the action",
+   "fieldname": "action_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Action Date",
+   "reqd": 1
+  },
+  {
+   "description": "Points added after processing",
+   "fieldname": "points_added",
+   "fieldtype": "Int",
+   "label": "Points Added"
+  },
+  {
+   "description": "XP add after processing",
+   "fieldname": "xp_added",
+   "fieldtype": "Int",
+   "label": "XP Added"
+  },
+  {
+   "description": "Processing result",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Success\nError\nDuplicate",
+   "reqd": 1
+  },
+  {
+   "description": "Unique event identifier",
+   "fieldname": "event_id",
+   "fieldtype": "Data",
+   "label": "Event ID",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-30 12:16:13.039099",
+ "modified_by": "Administrator",
+ "module": "Reward Engine",
+ "name": "Action Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

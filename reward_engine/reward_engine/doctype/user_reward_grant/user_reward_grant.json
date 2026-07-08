@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-30 12:18:00.353140",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_17ef",
+  "user_profile",
+  "reward",
+  "source_rule",
+  "grant_date",
+  "status",
+  "user_d",
+  "expiry_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_17ef",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "User who receives the reward",
+   "fieldname": "user_profile",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User Profile",
+   "options": "User Reward Profile",
+   "reqd": 1
+  },
+  {
+   "description": "Reward given",
+   "fieldname": "reward",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Reward",
+   "options": "Reward",
+   "reqd": 1
+  },
+  {
+   "description": "Rule that triggered the reward",
+   "fieldname": "source_rule",
+   "fieldtype": "Link",
+   "label": "Source Rule",
+   "options": "Reward Rule"
+  },
+  {
+   "description": "Date of reward attribution",
+   "fieldname": "grant_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Grant Date",
+   "reqd": 1
+  },
+  {
+   "description": "Reward status",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Granted\nUsed\nExpired",
+   "reqd": 1
+  },
+  {
+   "description": "Date of use",
+   "fieldname": "user_d",
+   "fieldtype": "Datetime",
+   "label": "User date"
+  },
+  {
+   "description": "Expiration date",
+   "fieldname": "expiry_date",
+   "fieldtype": "Datetime",
+   "label": "Expiry Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-30 12:27:42.623074",
+ "modified_by": "Administrator",
+ "module": "Reward Engine",
+ "name": "User Reward Grant",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

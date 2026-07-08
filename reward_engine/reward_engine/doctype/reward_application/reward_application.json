@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-30 11:07:59.547423",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_a3zf",
+  "application_name",
+  "application_code",
+  "api_key",
+  "api_secret",
+  "status",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_a3zf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Name of the client application",
+   "fieldname": "application_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Application Name",
+   "reqd": 1
+  },
+  {
+   "description": "Unique code of the application",
+   "fieldname": "application_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Application Code",
+   "reqd": 1
+  },
+  {
+   "description": "Public key used to identify the application",
+   "fieldname": "api_key",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "API Key",
+   "reqd": 1
+  },
+  {
+   "description": "Secret key used to secure API access",
+   "fieldname": "api_secret",
+   "fieldtype": "Password",
+   "in_list_view": 1,
+   "label": "API Secret",
+   "reqd": 1
+  },
+  {
+   "description": "Application status",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive",
+   "reqd": 1
+  },
+  {
+   "description": "Short description",
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-30 11:15:42.056447",
+ "modified_by": "Administrator",
+ "module": "Reward Engine",
+ "name": "Reward Application",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
